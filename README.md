@@ -1,7 +1,7 @@
 # 💻 Laptop Price Prediction using Multiple Linear Regression
 
 **Course**: Machine Learning / MLOps Lab Assignment  
-**Topic**: Predicting Laptop Prices in Indian Rupees (INR / Rs.) based on Hardware Specifications  
+**Topic**: Predicting Laptop Prices in USD ($) based on Hardware Specifications  
 
 ---
 
@@ -14,7 +14,7 @@ The pipeline includes synthetic data generation, exploratory data analysis (EDA)
 
 ## 🎯 Target & Features
 
-- **Target Variable ($y$)**: `Price` — Continuous numerical value in Indian Rupees (INR / Rs.)
+- **Target Variable ($y$)**: `Price` — Continuous numerical value in US Dollars ($)
 - **Feature Matrix ($X$)**:
   1. `RAM_GB`: Installed System RAM capacity (in GB)
   2. `Storage_SSD_GB`: SSD Storage capacity (in GB)
@@ -28,8 +28,9 @@ The pipeline includes synthetic data generation, exploratory data analysis (EDA)
 ```text
 .
 ├── laptop_price_prediction.ipynb  # Main Jupyter Notebook containing complete ML code
-├── laptop_prices.csv              # Synthetic dataset (300 records)
+├── laptop_prices.csv              # Dataset in USD (300 records)
 ├── actual_vs_predicted.png        # High-resolution scatter plot visualization
+├── .gitignore                     # Git configuration ignoring cache & CSV files
 └── README.md                      # Project documentation
 ```
 
@@ -78,21 +79,21 @@ pip install numpy pandas scikit-learn matplotlib seaborn
 
 ---
 
-## 📊 Sample Model Performance & Results
+## 📊 Sample Model Performance & Results (USD)
 
 ### 1. Regression Equation:
-$$\text{Price (Rs.)} = 8671.25 + (2979.38 \times \text{RAM}) + (54.61 \times \text{SSD}) + (3575.19 \times \text{CPU\_Cores}) + (2950.53 \times \text{Screen\_Size})$$
+$$\text{Price (\$)} = 55.07 + (37.69 \times \text{RAM\_GB}) + (0.69 \times \text{Storage\_SSD\_GB}) + (43.13 \times \text{CPU\_Cores}) + (36.76 \times \text{Screen\_Size\_Inches})$$
 
 ### 2. Feature Weight Interpretation:
-- **CPU Cores ($\approx \text{Rs. } 3,575.19$)**: Each additional core adds approx. $\text{Rs. } 3,575$ to price.
-- **RAM ($\approx \text{Rs. } 2,979.38$)**: Each additional GB of RAM adds approx. $\text{Rs. } 2,979$.
-- **Screen Size ($\approx \text{Rs. } 2,950.53$)**: Each additional inch adds approx. $\text{Rs. } 2,950$.
-- **Storage SSD ($\approx \text{Rs. } 54.61$)**: Each GB of SSD storage adds approx. $\text{Rs. } 54.61$.
+- **CPU Cores ($\approx \$43.13$)**: Each additional CPU core increases laptop price by approximately $\$43.13$.
+- **RAM ($\approx \$37.69$)**: Adding 1 GB of RAM increases price by $\$37.69$.
+- **Screen Size ($\approx \$36.76$)**: An extra inch in screen size adds about $\$36.76$.
+- **Storage SSD ($\approx \$0.69$)**: Every extra GB of SSD storage adds about $\$0.69$.
 
 ### 3. Evaluation Metrics on Test Set:
-- **MAE**: $\text{Rs. } 3,565.59$
-- **RMSE**: $\text{Rs. } 4,444.32$
-- **$R^2$ Score**: **0.9890** ($98.90\%$ variance explained)
+- **MAE**: $\$53.48$
+- **RMSE**: $\$66.67$
+- **$R^2$ Score**: **0.9848** ($98.48\%$ variance explained)
 
 ---
 
