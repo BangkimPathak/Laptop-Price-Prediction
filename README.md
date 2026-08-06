@@ -1,6 +1,6 @@
 # 💻 Laptop Price Prediction using Multiple Linear Regression
 
-**Course**: Machine Learning / MLOps Lab Assignment  
+ **MLOps Lab Assignment**  
 **Topic**: Predicting Laptop Prices in Indian Rupees (INR / Rs.) based on Hardware Specifications  
 
 ---
@@ -49,15 +49,6 @@ pip install numpy pandas scikit-learn matplotlib seaborn
 
 ---
 
-## 🚀 How to Run the Project
-
-1. Open VS Code and navigate to this project folder.
-2. Open **[`laptop_price_prediction.ipynb`](file:///c:/documents/JAIN/SEM%205/MLOps/Assignments/A1/laptop_price_prediction.ipynb)**.
-3. Select your Python Environment kernel at the top-right corner of the notebook editor.
-4. Click **Run All** or execute cells sequentially (`Shift + Enter`).
-
----
-
 ## 🔄 Machine Learning Pipeline Steps
 
 1. **Synthetic Data Generation**: 
@@ -100,7 +91,3 @@ $$\text{Price (Rs.)} = 8671.25 + (2979.38 \times \text{RAM}) + (54.61 \times \te
 
 The notebook automatically exports a publication-quality visualization: **`actual_vs_predicted.png`**.
 
----
-
-## 📝 License & Usage
-Created for University Lab Assignment / Educational Purposes.
