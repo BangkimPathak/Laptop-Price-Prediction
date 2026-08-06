@@ -1,6 +1,5 @@
 # 💻 Laptop Price Prediction using Multiple Linear Regression
 
- **MLOps Lab Assignment**  
 **Topic**: Predicting Laptop Prices in Indian Rupees (INR / Rs.) based on Hardware Specifications  
 
 ---
