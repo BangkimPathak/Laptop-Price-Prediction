@@ -34,6 +34,8 @@ The pipeline includes synthetic data generation, exploratory data analysis (EDA)
 ```
 
 ---
+## 📁 Databases extracted  from 
+LINK: https://www.kaggle.com/datasets/sohaibdevv/modern-laptops-hardware-and-pricing-dataset-2026
 
 ## ⚙️ Environment Setup & Dependencies
 
